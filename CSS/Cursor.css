@@ -1,0 +1,38 @@
+
+.cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #072728;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+    z-index: 200000;
+  }
+  
+  .cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #072728;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
+  }
+
+
+  nav .content:hover ~ .cursor{
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #ca1414;
+    opacity: .5;
+  }
+  
+  .content:hover ~ .cursor2{
+    opacity: 0;
+  }
