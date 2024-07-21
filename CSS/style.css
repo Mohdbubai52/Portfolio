@@ -77,7 +77,7 @@ header nav a{
     );
     display: inline-block;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
 }
 #intro .content .des{
     margin-top: 1.2em;
