@@ -2,6 +2,7 @@ let intro = document.getElementById('intro');
 let experience = document.getElementById('experience');
 let skill = document.getElementById('skill');
 let project = document.getElementById('project');
+let pricing = document.getElementById('pricing');
 let contact = document.getElementById('contact');
 
 let aHref = document.querySelectorAll('a');
