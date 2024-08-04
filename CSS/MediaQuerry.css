@@ -1,0 +1,60 @@
+@media screen and (max-width: 991px) {
+    /* ipad, tablets */
+    #intro .avatar img {
+      transform: translateX(200px);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    body {
+      font-size: 10px;
+    }
+    header nav a {
+      margin: 10px;
+    }
+    #intro .avatar img {
+      transform: scale(80%);
+    }
+    #intro .content {
+      left: 20px;
+    }
+    #intro .content .name {
+      font-size: 4em;
+    }
+    #intro .content i {
+      position: unset;
+    }
+    #skill .list {
+      padding: 0px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #skill .list .item:nth-child(odd) {
+      background: unset;
+    }
+    #skill .list .item:nth-child(2),
+    #skill .list .item:nth-child(3n) {
+      background: #3f2525;
+    }
+    #project .list {
+      padding: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+    }
+    #project .list .item img {
+      height: 100px;
+    }
+    #pricing .container h1{
+      font-size: 30px;
+    }
+    #pricing .container p{
+      font: 12px;
+    }
+    #pricing .container .list {
+      padding: 15px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+    #pricing .container .list .item span{
+      left: 65%;
+    }
+  }
+  

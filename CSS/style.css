@@ -172,6 +172,7 @@ header nav a {
   color: #eee;
   background-image: linear-gradient(45deg, #3a2530, #171514, #412726);
   background-size: cover;
+  overflow: auto;
 }
 #skill .list {
   height: 100%;
@@ -194,6 +195,18 @@ header nav a {
   background-color: #3f2525;
 }
 #skill .list .item i {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  color: #ca3ea7;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px #0005;
+}
+#skill .list .item img{
   width: 50px;
   height: 50px;
   background-color: #eee;
@@ -270,30 +283,96 @@ header nav a {
 }
 
 #pricing {
-    background-color: #16222d;
+  background-color: #16222d;
   color: rgb(0, 0, 0);
   height: 100%;
 }
-#pricing .container h1{
-    font-size: 60px;
-    font-family: Gupter ;
-    color: white;
-    text-align: center;
+#pricing .container {
+  overflow: auto;
+}
+#pricing .container h1 {
+  font-size: 60px;
+  font-family: Gupter;
+  color: white;
+  text-align: center;
 }
 #pricing .container .list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 50px;
-    /* background-color: red; */
-  }
-
-
-#pricing .container .list .item {
-    /* height: 600px; */
-    width: 400px;
-    background-color: red;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 50px;
+  
 }
+#pricing .list .item {
+    border-radius: 30px;
+    overflow: hidden;
+    background-color:#b1b8d3;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pricing p{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+#pricing p  span{
+    font-weight: bold;
+    color: rgb(11, 194, 245);
+}
+
+#pricing .container .list .item span {
+  display: flex;
+  height: 40px;
+  width: 160px;
+  background: rgb(61, 61, 240);
+  position: relative;
+  rotate: 34.76deg;
+  left: 35%;
+  top: 1%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  
+}
+
+
+#pricing .container .list .item h2{
+    text-align: center;
+}
+
+#pricing .list .item ul 
+{
+  list-style-type: none;
+}
+#pricing .list .item ul li{
+  font-size: 16px;
+  
+}
+#pricing .list .item ul li::before{
+content: "-";
+padding: 2px;
+}
+#pricing .list .item ul .Bld{
+  font-weight: bold;
+}
+#pricing .list .item button{
+  background: rgb(61, 61, 240);
+  border-color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+
+
+
 #contact {
   background: #242330;
 }
@@ -322,51 +401,6 @@ header nav a {
   margin: 10px 30px;
 }
 
-@media screen and (max-width: 991px) {
-  /* ipad, tablets */
-  #intro .avatar img {
-    transform: translateX(200px);
-  }
-}
-@media screen and (max-width: 767px) {
-  body {
-    font-size: 10px;
-  }
-  header nav a {
-    margin: 10px;
-  }
-  #intro .avatar img {
-    transform: scale(80%);
-  }
-  #intro .content {
-    left: 20px;
-  }
-  #intro .content .name {
-    font-size: 4em;
-  }
-  #intro .content i {
-    position: unset;
-  }
-  #skill .list {
-    padding: 0px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  #skill .list .item:nth-child(odd) {
-    background: unset;
-  }
-  #skill .list .item:nth-child(2),
-  #skill .list .item:nth-child(3n) {
-    background: #3f2525;
-  }
-  #project .list {
-    padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-  }
-  #project .list .item img {
-    height: 100px;
-  }
-}
 
 /* effect */
 .tab {
